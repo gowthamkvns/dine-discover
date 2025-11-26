@@ -1,6 +1,7 @@
 import { Restaurant, Review } from "@/types/restaurant";
 
 export const restaurants: Restaurant[] = [
+  // Italian Restaurants
   {
     id: "1",
     name: "The Golden Spoon",
@@ -20,6 +21,42 @@ export const restaurants: Restaurant[] = [
   },
   {
     id: "2",
+    name: "Trattoria Roma",
+    cuisine: "Italian",
+    rating: 3.8,
+    reviewCount: 156,
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800",
+    priceRange: "$$",
+    waitTime: "20-30 min",
+    description: "Traditional Roman trattoria with rustic charm and classic recipes passed down through generations.",
+    menu: [
+      { id: "m25", name: "Lasagna", description: "Layered pasta with meat sauce and bechamel", price: 17, category: "Main" },
+      { id: "m26", name: "Fettuccine Alfredo", description: "Creamy parmesan sauce with fresh pasta", price: 16, category: "Main" },
+      { id: "m27", name: "Bruschetta", description: "Toasted bread with tomatoes and basil", price: 8, category: "Starter" },
+      { id: "m28", name: "Panna Cotta", description: "Italian cream dessert with berry sauce", price: 8, category: "Dessert" },
+    ],
+  },
+  {
+    id: "3",
+    name: "Bella Napoli",
+    cuisine: "Italian",
+    rating: 4.2,
+    reviewCount: 198,
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+    priceRange: "$$",
+    waitTime: "10-20 min",
+    description: "Neapolitan pizza and pasta house with authentic recipes from Southern Italy.",
+    menu: [
+      { id: "m29", name: "Neapolitan Pizza", description: "Thin crust pizza with San Marzano tomatoes", price: 15, category: "Main" },
+      { id: "m30", name: "Spaghetti Bolognese", description: "Traditional meat sauce with spaghetti", price: 14, category: "Main" },
+      { id: "m31", name: "Caprese Salad", description: "Fresh mozzarella, tomatoes, and basil", price: 11, category: "Starter" },
+      { id: "m32", name: "Cannoli", description: "Sicilian pastry with sweet ricotta filling", price: 7, category: "Dessert" },
+    ],
+  },
+
+  // Japanese Restaurants
+  {
+    id: "4",
     name: "Sushi Paradise",
     cuisine: "Japanese",
     rating: 4.9,
@@ -36,7 +73,43 @@ export const restaurants: Restaurant[] = [
     ],
   },
   {
-    id: "3",
+    id: "5",
+    name: "Tokyo Nights",
+    cuisine: "Japanese",
+    rating: 4.1,
+    reviewCount: 223,
+    image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=800",
+    priceRange: "$$$",
+    waitTime: "15-25 min",
+    description: "Modern Japanese cuisine with creative fusion dishes and traditional favorites.",
+    menu: [
+      { id: "m33", name: "Ramen Bowl", description: "Rich pork broth with noodles and toppings", price: 16, category: "Main" },
+      { id: "m34", name: "Tempura Udon", description: "Thick noodles with crispy tempura", price: 18, category: "Main" },
+      { id: "m35", name: "Gyoza", description: "Pan-fried dumplings with dipping sauce", price: 9, category: "Starter" },
+      { id: "m36", name: "Green Tea Tiramisu", description: "Japanese twist on Italian classic", price: 9, category: "Dessert" },
+    ],
+  },
+  {
+    id: "6",
+    name: "Sakura Sushi Bar",
+    cuisine: "Japanese",
+    rating: 3.6,
+    reviewCount: 167,
+    image: "https://images.unsplash.com/photo-1563612116625-3012372fccce?w=800",
+    priceRange: "$$",
+    waitTime: "10-15 min",
+    description: "Casual sushi spot with affordable prices and quick service.",
+    menu: [
+      { id: "m37", name: "California Roll", description: "Crab, avocado, and cucumber roll", price: 10, category: "Main" },
+      { id: "m38", name: "Teriyaki Chicken", description: "Grilled chicken with teriyaki glaze", price: 13, category: "Main" },
+      { id: "m39", name: "Edamame", description: "Steamed soybeans with sea salt", price: 5, category: "Starter" },
+      { id: "m40", name: "Dorayaki", description: "Sweet red bean pancake sandwich", price: 6, category: "Dessert" },
+    ],
+  },
+
+  // Indian Restaurants
+  {
+    id: "7",
     name: "Spice Route",
     cuisine: "Indian",
     rating: 4.6,
@@ -53,7 +126,43 @@ export const restaurants: Restaurant[] = [
     ],
   },
   {
-    id: "4",
+    id: "8",
+    name: "Tandoor Palace",
+    cuisine: "Indian",
+    rating: 4.4,
+    reviewCount: 276,
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800",
+    priceRange: "$$$",
+    waitTime: "15-25 min",
+    description: "Premium Indian restaurant specializing in tandoor-grilled meats and breads.",
+    menu: [
+      { id: "m41", name: "Tandoori Chicken", description: "Clay oven roasted chicken with spices", price: 18, category: "Main" },
+      { id: "m42", name: "Lamb Rogan Josh", description: "Aromatic lamb curry with Kashmiri spices", price: 22, category: "Main" },
+      { id: "m43", name: "Naan Bread Basket", description: "Assorted fresh-baked Indian breads", price: 8, category: "Starter" },
+      { id: "m44", name: "Rasmalai", description: "Cottage cheese dumplings in sweet cream", price: 7, category: "Dessert" },
+    ],
+  },
+  {
+    id: "9",
+    name: "Mumbai Street Kitchen",
+    cuisine: "Indian",
+    rating: 3.9,
+    reviewCount: 142,
+    image: "https://images.unsplash.com/photo-1567337710282-00832b415979?w=800",
+    priceRange: "$",
+    waitTime: "5-15 min",
+    description: "Fast-casual Indian street food with bold flavors and quick service.",
+    menu: [
+      { id: "m45", name: "Chicken Tikka Masala", description: "Grilled chicken in spiced tomato sauce", price: 13, category: "Main" },
+      { id: "m46", name: "Vegetable Biryani", description: "Fragrant rice with mixed vegetables", price: 12, category: "Main" },
+      { id: "m47", name: "Pakora", description: "Mixed vegetable fritters", price: 6, category: "Starter" },
+      { id: "m48", name: "Kulfi", description: "Traditional Indian ice cream", price: 5, category: "Dessert" },
+    ],
+  },
+
+  // French Restaurants
+  {
+    id: "10",
     name: "Le Bistro",
     cuisine: "French",
     rating: 4.7,
@@ -70,7 +179,26 @@ export const restaurants: Restaurant[] = [
     ],
   },
   {
-    id: "5",
+    id: "11",
+    name: "Maison de Cuisine",
+    cuisine: "French",
+    rating: 4.9,
+    reviewCount: 389,
+    image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800",
+    priceRange: "$$$$",
+    waitTime: "30-45 min",
+    description: "Michelin-star worthy French fine dining with seasonal tasting menus.",
+    menu: [
+      { id: "m49", name: "Duck Confit", description: "Slow-cooked duck leg with crispy skin", price: 32, category: "Main" },
+      { id: "m50", name: "Beef Bourguignon", description: "Burgundy wine-braised beef", price: 35, category: "Main" },
+      { id: "m51", name: "Escargot", description: "Burgundy snails with garlic butter", price: 16, category: "Starter" },
+      { id: "m52", name: "Tarte Tatin", description: "Upside-down caramelized apple tart", price: 12, category: "Dessert" },
+    ],
+  },
+
+  // Mexican Restaurants
+  {
+    id: "12",
     name: "Taco Fiesta",
     cuisine: "Mexican",
     rating: 4.5,
@@ -87,7 +215,43 @@ export const restaurants: Restaurant[] = [
     ],
   },
   {
-    id: "6",
+    id: "13",
+    name: "El Mariachi Loco",
+    cuisine: "Mexican",
+    rating: 3.7,
+    reviewCount: 165,
+    image: "https://images.unsplash.com/photo-1599974291314-6e408c6a88c0?w=800",
+    priceRange: "$",
+    waitTime: "10-20 min",
+    description: "Casual Mexican cantina with generous portions and festive atmosphere.",
+    menu: [
+      { id: "m53", name: "Burrito Grande", description: "Large flour tortilla with rice, beans, and meat", price: 12, category: "Main" },
+      { id: "m54", name: "Quesadilla", description: "Grilled cheese tortilla with fillings", price: 10, category: "Main" },
+      { id: "m55", name: "Nachos Supreme", description: "Tortilla chips loaded with toppings", price: 11, category: "Starter" },
+      { id: "m56", name: "Flan", description: "Caramel custard dessert", price: 6, category: "Dessert" },
+    ],
+  },
+  {
+    id: "14",
+    name: "Casa Guadalajara",
+    cuisine: "Mexican",
+    rating: 4.3,
+    reviewCount: 234,
+    image: "https://images.unsplash.com/photo-1613514785940-daed07799d9b?w=800",
+    priceRange: "$$",
+    waitTime: "15-25 min",
+    description: "Family-style Mexican restaurant with traditional recipes and warm hospitality.",
+    menu: [
+      { id: "m57", name: "Mole Poblano", description: "Chicken in rich chocolate chili sauce", price: 17, category: "Main" },
+      { id: "m58", name: "Carnitas", description: "Slow-braised pork with tortillas", price: 16, category: "Main" },
+      { id: "m59", name: "Ceviche", description: "Fresh fish marinated in citrus", price: 14, category: "Starter" },
+      { id: "m60", name: "Tres Leches Cake", description: "Three-milk soaked sponge cake", price: 8, category: "Dessert" },
+    ],
+  },
+
+  // Chinese Restaurants
+  {
+    id: "15",
     name: "Dragon Wok",
     cuisine: "Chinese",
     rating: 4.4,
@@ -103,73 +267,187 @@ export const restaurants: Restaurant[] = [
       { id: "m24", name: "Mango Pudding", description: "Sweet mango dessert", price: 6, category: "Dessert" },
     ],
   },
+  {
+    id: "16",
+    name: "Golden Dynasty",
+    cuisine: "Chinese",
+    rating: 4.6,
+    reviewCount: 298,
+    image: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800",
+    priceRange: "$$$",
+    waitTime: "20-30 min",
+    description: "Upscale Chinese restaurant with dim sum and authentic Cantonese cuisine.",
+    menu: [
+      { id: "m61", name: "Dim Sum Platter", description: "Assorted steamed dumplings", price: 24, category: "Main" },
+      { id: "m62", name: "Sweet and Sour Pork", description: "Crispy pork in tangy sauce", price: 16, category: "Main" },
+      { id: "m63", name: "Hot and Sour Soup", description: "Spicy and tangy soup with tofu", price: 7, category: "Starter" },
+      { id: "m64", name: "Sesame Balls", description: "Fried glutinous rice balls with red bean", price: 7, category: "Dessert" },
+    ],
+  },
+  {
+    id: "17",
+    name: "Wok Express",
+    cuisine: "Chinese",
+    rating: 3.5,
+    reviewCount: 124,
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800",
+    priceRange: "$",
+    waitTime: "5-10 min",
+    description: "Fast-casual Chinese takeout with affordable combo meals.",
+    menu: [
+      { id: "m65", name: "General Tso's Chicken", description: "Sweet and spicy fried chicken", price: 11, category: "Main" },
+      { id: "m66", name: "Fried Rice", description: "Stir-fried rice with vegetables and egg", price: 9, category: "Main" },
+      { id: "m67", name: "Egg Rolls", description: "Crispy vegetable rolls", price: 5, category: "Starter" },
+      { id: "m68", name: "Fortune Cookies", description: "Traditional fortune cookies", price: 2, category: "Dessert" },
+    ],
+  },
 ];
 
 export const reviews: Review[] = [
-  {
-    id: "r1",
-    restaurantId: "1",
-    username: "FoodLover23",
-    rating: 5,
-    comment: "Amazing pasta! The carbonara was perfectly creamy and the service was excellent.",
-    date: "2024-01-15",
-  },
-  {
-    id: "r2",
-    restaurantId: "1",
-    username: "ItalianFan",
-    rating: 4,
-    comment: "Great atmosphere and authentic flavors. The pizza was a bit too salty for my taste.",
-    date: "2024-01-10",
-  },
-  {
-    id: "r3",
-    restaurantId: "2",
-    username: "SushiMaster",
-    rating: 5,
-    comment: "Best sushi in town! Fresh fish and skilled chefs. The omakase is worth every penny.",
-    date: "2024-01-18",
-  },
-  {
-    id: "r4",
-    restaurantId: "2",
-    username: "SeafoodFan",
-    rating: 5,
-    comment: "Incredible quality and presentation. Will definitely come back!",
-    date: "2024-01-12",
-  },
-  {
-    id: "r5",
-    restaurantId: "3",
-    username: "SpiceLover",
-    rating: 4,
-    comment: "Delicious butter chicken and great value for money. Portions were generous!",
-    date: "2024-01-14",
-  },
-  {
-    id: "r6",
-    restaurantId: "4",
-    username: "FrenchieGourmet",
-    rating: 5,
-    comment: "Authentic French cuisine. The coq au vin transported me to Paris!",
-    date: "2024-01-16",
-  },
-  {
-    id: "r7",
-    restaurantId: "5",
-    username: "TacoTuesday",
-    rating: 4,
-    comment: "Fresh ingredients and bold flavors. The carne asada was perfectly seasoned.",
-    date: "2024-01-13",
-  },
-  {
-    id: "r8",
-    restaurantId: "6",
-    username: "AsianCuisine",
-    rating: 4,
-    comment: "Good Chinese food with authentic spices. The kung pao had the right kick!",
-    date: "2024-01-11",
-  },
+  // The Golden Spoon reviews (Italian - 4.8 rating)
+  { id: "r1", restaurantId: "1", username: "FoodLover23", rating: 5, comment: "Amazing pasta! The carbonara was perfectly creamy and the service was excellent.", date: "2024-01-15" },
+  { id: "r2", restaurantId: "1", username: "ItalianFan", rating: 4, comment: "Great atmosphere and authentic flavors. The pizza was a bit too salty for my taste.", date: "2024-01-10" },
+  { id: "r3", restaurantId: "1", username: "MarcoPolo", rating: 5, comment: "Best Italian in the city! The homemade pasta is divine.", date: "2024-01-08" },
+  { id: "r4", restaurantId: "1", username: "PizzaExpert", rating: 5, comment: "Wood-fired perfection. Reminded me of my trip to Rome.", date: "2024-01-05" },
+  { id: "r5", restaurantId: "1", username: "DiningDiva", rating: 5, comment: "Tiramisu was heavenly. Will definitely return!", date: "2024-01-02" },
+  { id: "r6", restaurantId: "1", username: "ChefTom", rating: 4, comment: "Solid Italian food. Service could be faster during peak hours.", date: "2023-12-28" },
+  { id: "r7", restaurantId: "1", username: "NomNomNancy", rating: 5, comment: "Family-owned gem with authentic recipes. Love it!", date: "2023-12-25" },
+
+  // Trattoria Roma reviews (Italian - 3.8 rating - mixed)
+  { id: "r8", restaurantId: "2", username: "CriticalEater", rating: 3, comment: "Food was okay but nothing special. Waited 40 minutes for our order.", date: "2024-01-14" },
+  { id: "r9", restaurantId: "2", username: "RusticFan", rating: 4, comment: "Love the rustic atmosphere. Lasagna was good but a bit dry.", date: "2024-01-11" },
+  { id: "r10", restaurantId: "2", username: "PastaLover", rating: 4, comment: "Decent Italian food at reasonable prices. Nothing fancy.", date: "2024-01-09" },
+  { id: "r11", restaurantId: "2", username: "SkepticalSam", rating: 3, comment: "Overpriced for what you get. Service was slow.", date: "2024-01-06" },
+  { id: "r12", restaurantId: "2", username: "LocalFoodie", rating: 4, comment: "Good for a casual dinner. The bread is amazing!", date: "2024-01-03" },
+  { id: "r13", restaurantId: "2", username: "TraditionalistTina", rating: 5, comment: "Old-school Italian charm. Reminds me of my nonna's cooking.", date: "2023-12-30" },
+  { id: "r14", restaurantId: "2", username: "MehMike", rating: 3, comment: "Not bad but wouldn't rush back. Portions were small.", date: "2023-12-27" },
+
+  // Bella Napoli reviews (Italian - 4.2 rating)
+  { id: "r15", restaurantId: "3", username: "NaplesNative", rating: 5, comment: "Authentic Neapolitan pizza! The crust is perfection.", date: "2024-01-16" },
+  { id: "r16", restaurantId: "3", username: "PizzaPurist", rating: 4, comment: "Great pizza but limited menu. Worth it for the quality.", date: "2024-01-13" },
+  { id: "r17", restaurantId: "3", username: "TomatoLover", rating: 4, comment: "San Marzano tomatoes make all the difference. Delicious!", date: "2024-01-10" },
+  { id: "r18", restaurantId: "3", username: "CapreseFan", rating: 4, comment: "Fresh ingredients, simple preparation. Italian done right.", date: "2024-01-07" },
+  { id: "r19", restaurantId: "3", username: "QuickBite", rating: 4, comment: "Fast service and good food. Perfect for lunch.", date: "2024-01-04" },
+  { id: "r20", restaurantId: "3", username: "SouthernItalyFan", rating: 5, comment: "Best Southern Italian food I've had outside of Italy!", date: "2024-01-01" },
+
+  // Sushi Paradise reviews (Japanese - 4.9 rating)
+  { id: "r21", restaurantId: "4", username: "SushiMaster", rating: 5, comment: "Best sushi in town! Fresh fish and skilled chefs. The omakase is worth every penny.", date: "2024-01-18" },
+  { id: "r22", restaurantId: "4", username: "SeafoodFan", rating: 5, comment: "Incredible quality and presentation. Will definitely come back!", date: "2024-01-12" },
+  { id: "r23", restaurantId: "4", username: "JapanExpert", rating: 5, comment: "Authentic Japanese techniques. Fish melts in your mouth.", date: "2024-01-09" },
+  { id: "r24", restaurantId: "4", username: "OmakaseLover", rating: 5, comment: "Let the chef choose - you won't be disappointed!", date: "2024-01-06" },
+  { id: "r25", restaurantId: "4", username: "FreshFishFan", rating: 5, comment: "Daily catches are always perfect. Premium quality.", date: "2024-01-03" },
+  { id: "r26", restaurantId: "4", username: "TokyoTraveler", rating: 4, comment: "Almost as good as sushi in Tokyo! Slightly pricey but worth it.", date: "2023-12-31" },
+  { id: "r27", restaurantId: "4", username: "SalmonSam", rating: 5, comment: "The salmon is unbelievably fresh. Best I've ever had.", date: "2023-12-28" },
+  { id: "r28", restaurantId: "4", username: "SushiSnob", rating: 5, comment: "This is what real sushi should taste like. Perfection.", date: "2023-12-25" },
+
+  // Tokyo Nights reviews (Japanese - 4.1 rating)
+  { id: "r29", restaurantId: "5", username: "RamenRick", rating: 4, comment: "Great ramen bowl! Broth was rich and flavorful.", date: "2024-01-15" },
+  { id: "r30", restaurantId: "5", username: "FusionFoodie", rating: 4, comment: "Love the creative fusion dishes. Not traditional but tasty.", date: "2024-01-12" },
+  { id: "r31", restaurantId: "5", username: "NoodleFan", rating: 4, comment: "Good Japanese food with modern touches. Tempura was crispy.", date: "2024-01-09" },
+  { id: "r32", restaurantId: "5", username: "GyozaGirl", rating: 5, comment: "Best gyoza I've ever had! Pan-fried to perfection.", date: "2024-01-06" },
+  { id: "r33", restaurantId: "5", username: "ModernEater", rating: 4, comment: "Innovative takes on classics. Green tea tiramisu was interesting.", date: "2024-01-03" },
+  { id: "r34", restaurantId: "5", username: "TraditionalTom", rating: 3, comment: "Too fusion-y for my taste. Prefer more authentic Japanese.", date: "2023-12-30" },
+
+  // Sakura Sushi Bar reviews (Japanese - 3.6 rating - mixed)
+  { id: "r35", restaurantId: "6", username: "BudgetBite", rating: 4, comment: "Good value for money. Don't expect premium quality.", date: "2024-01-14" },
+  { id: "r36", restaurantId: "6", username: "QuickLunch", rating: 4, comment: "Fast and convenient. Perfect for a quick sushi fix.", date: "2024-01-11" },
+  { id: "r37", restaurantId: "6", username: "SushiPurist", rating: 2, comment: "Not the freshest fish. California roll was mediocre at best.", date: "2024-01-08" },
+  { id: "r38", restaurantId: "6", username: "CasualDiner", rating: 4, comment: "Decent for the price. Nothing fancy but hits the spot.", date: "2024-01-05" },
+  { id: "r39", restaurantId: "6", username: "AffordableAmy", rating: 4, comment: "Great prices! Good for casual dining with friends.", date: "2024-01-02" },
+  { id: "r40", restaurantId: "6", username: "PickyPete", rating: 3, comment: "It's okay. Better options elsewhere if you don't mind paying more.", date: "2023-12-29" },
+
+  // Spice Route reviews (Indian - 4.6 rating)
+  { id: "r41", restaurantId: "7", username: "SpiceLover", rating: 4, comment: "Delicious butter chicken and great value for money. Portions were generous!", date: "2024-01-14" },
+  { id: "r42", restaurantId: "7", username: "CurryKing", rating: 5, comment: "Authentic flavors! The spices are perfectly balanced.", date: "2024-01-11" },
+  { id: "r43", restaurantId: "7", username: "VeggieVicky", rating: 5, comment: "Best palak paneer in the city! Creamy and flavorful.", date: "2024-01-08" },
+  { id: "r44", restaurantId: "7", username: "SamosaFan", rating: 4, comment: "Crispy samosas with amazing chutney. Great starter!", date: "2024-01-05" },
+  { id: "r45", restaurantId: "7", username: "IndianCuisineLover", rating: 5, comment: "Regional specialties are incredible. Must try!", date: "2024-01-02" },
+  { id: "r46", restaurantId: "7", username: "FlavorSeeker", rating: 4, comment: "Good Indian food. Would like to see more variety on menu.", date: "2023-12-30" },
+
+  // Tandoor Palace reviews (Indian - 4.4 rating)
+  { id: "r47", restaurantId: "8", username: "TandooriTom", rating: 5, comment: "Tandoori chicken is phenomenal! Cooked to perfection in the clay oven.", date: "2024-01-16" },
+  { id: "r48", restaurantId: "8", username: "LambLover", rating: 4, comment: "Rogan josh was aromatic and tender. A bit pricey but worth it.", date: "2024-01-13" },
+  { id: "r49", restaurantId: "8", username: "NaanFan", rating: 5, comment: "Fresh naan bread basket is a must-order. So fluffy!", date: "2024-01-10" },
+  { id: "r50", restaurantId: "8", username: "UpscaleDiner", rating: 4, comment: "Premium quality Indian food. Great for special occasions.", date: "2024-01-07" },
+  { id: "r51", restaurantId: "8", username: "SpiceExpert", rating: 5, comment: "Kashmiri spices are authentic. Best lamb curry I've had!", date: "2024-01-04" },
+  { id: "r52", restaurantId: "8", username: "DessertDan", rating: 4, comment: "Rasmalai was delicious. Sweet but not overpowering.", date: "2024-01-01" },
+  { id: "r53", restaurantId: "8", username: "FoodConnoisseur", rating: 4, comment: "High-quality ingredients and expert preparation. Recommended!", date: "2023-12-28" },
+
+  // Mumbai Street Kitchen reviews (Indian - 3.9 rating)
+  { id: "r54", restaurantId: "9", username: "StreetFoodSam", rating: 4, comment: "Love the street food vibe! Quick and tasty.", date: "2024-01-15" },
+  { id: "r55", restaurantId: "9", username: "BoldFlavors", rating: 4, comment: "Spicy and flavorful. Perfect for lunch on the go.", date: "2024-01-12" },
+  { id: "r56", restaurantId: "9", username: "BudgetFoodie", rating: 4, comment: "Great prices and generous portions. Can't beat the value!", date: "2024-01-09" },
+  { id: "r57", restaurantId: "9", username: "BiryaniLover", rating: 3, comment: "Biryani was good but could use more flavor. Fast service though.", date: "2024-01-06" },
+  { id: "r58", restaurantId: "9", username: "CasualEater", rating: 4, comment: "Perfect for a quick meal. Nothing fancy but hits the spot.", date: "2024-01-03" },
+  { id: "r59", restaurantId: "9", username: "PakoraFan", rating: 4, comment: "Pakoras are crispy and delicious. Good street food experience.", date: "2023-12-31" },
+
+  // Le Bistro reviews (French - 4.7 rating)
+  { id: "r60", restaurantId: "10", username: "FrenchieGourmet", rating: 5, comment: "Authentic French cuisine. The coq au vin transported me to Paris!", date: "2024-01-16" },
+  { id: "r61", restaurantId: "10", username: "ElegantEater", rating: 5, comment: "Classic bistro with impeccable service. Ratatouille was divine.", date: "2024-01-13" },
+  { id: "r62", restaurantId: "10", username: "WineLover", rating: 4, comment: "Great wine selection. Food pairs perfectly with their recommendations.", date: "2024-01-10" },
+  { id: "r63", restaurantId: "10", username: "OnionSoupFan", rating: 5, comment: "Best French onion soup I've ever had! The cheese pull is incredible.", date: "2024-01-07" },
+  { id: "r64", restaurantId: "10", username: "CremeBruleeLover", rating: 4, comment: "Crème brûlée was perfect. Crispy caramelized sugar on top.", date: "2024-01-04" },
+  { id: "r65", restaurantId: "10", username: "BistroFan", rating: 5, comment: "Timeless French dishes done right. Love the elegant setting.", date: "2024-01-01" },
+  { id: "r66", restaurantId: "10", username: "ClassicCuisine", rating: 4, comment: "Traditional French food with excellent execution. Highly recommend!", date: "2023-12-29" },
+
+  // Maison de Cuisine reviews (French - 4.9 rating)
+  { id: "r67", restaurantId: "11", username: "MichelinHunter", rating: 5, comment: "This place deserves a Michelin star! Duck confit was perfection.", date: "2024-01-17" },
+  { id: "r68", restaurantId: "11", username: "FineDiningFan", rating: 5, comment: "Seasonal tasting menu is a culinary journey. Worth every penny!", date: "2024-01-14" },
+  { id: "r69", restaurantId: "11", username: "BeefBourguignonBob", rating: 5, comment: "Best beef bourguignon outside of France. Tender and flavorful.", date: "2024-01-11" },
+  { id: "r70", restaurantId: "11", username: "GourmetGary", rating: 5, comment: "Impeccable service and exquisite food. A true fine dining experience.", date: "2024-01-08" },
+  { id: "r71", restaurantId: "11", username: "EscargotExpert", rating: 5, comment: "Escargot was buttery perfection. Every dish is a work of art.", date: "2024-01-05" },
+  { id: "r72", restaurantId: "11", username: "TastingMenuTina", rating: 4, comment: "Amazing tasting menu but very pricey. Save it for special occasions.", date: "2024-01-02" },
+  { id: "r73", restaurantId: "11", username: "FrenchFoodie", rating: 5, comment: "The tarte tatin alone is worth the visit. Phenomenal!", date: "2023-12-30" },
+  { id: "r74", restaurantId: "11", username: "CulinaryConnoisseur", rating: 5, comment: "This is what French fine dining should be. Absolutely stunning.", date: "2023-12-27" },
+
+  // Taco Fiesta reviews (Mexican - 4.5 rating)
+  { id: "r75", restaurantId: "12", username: "TacoTuesday", rating: 4, comment: "Fresh ingredients and bold flavors. The carne asada was perfectly seasoned.", date: "2024-01-13" },
+  { id: "r76", restaurantId: "12", username: "MargaritaMary", rating: 5, comment: "Best margaritas in town! Tacos are authentic street-style.", date: "2024-01-10" },
+  { id: "r77", restaurantId: "12", username: "GuacGuru", rating: 5, comment: "Fresh guacamole made tableside. Love the vibrant atmosphere!", date: "2024-01-07" },
+  { id: "r78", restaurantId: "12", username: "EnchiladaFan", rating: 4, comment: "Enchiladas verdes were delicious. Green sauce had great flavor.", date: "2024-01-04" },
+  { id: "r79", restaurantId: "12", username: "ChurroChaser", rating: 4, comment: "Churros for dessert are a must! Crispy and sweet.", date: "2024-01-01" },
+  { id: "r80", restaurantId: "12", username: "MexicanFoodie", rating: 5, comment: "Authentic Mexican flavors. Feels like eating in Mexico City!", date: "2023-12-29" },
+
+  // El Mariachi Loco reviews (Mexican - 3.7 rating - mixed)
+  { id: "r81", restaurantId: "13", username: "BurritoBob", rating: 4, comment: "Huge burritos! Great value but can be a bit messy.", date: "2024-01-14" },
+  { id: "r82", restaurantId: "13", username: "FiestaFan", rating: 4, comment: "Fun atmosphere with live mariachi music. Food is decent.", date: "2024-01-11" },
+  { id: "r83", restaurantId: "13", username: "CriticalCarlos", rating: 3, comment: "Portions are big but quality is average. Nothing special.", date: "2024-01-08" },
+  { id: "r84", restaurantId: "13", username: "NachoLover", rating: 4, comment: "Nachos supreme lived up to the name! Loaded with toppings.", date: "2024-01-05" },
+  { id: "r85", restaurantId: "13", username: "CasualMexican", rating: 3, comment: "Okay for a casual meal. Better options elsewhere for same price.", date: "2024-01-02" },
+  { id: "r86", restaurantId: "13", username: "FlanFan", rating: 4, comment: "Flan was good but main dishes were just okay. Mixed experience.", date: "2023-12-30" },
+
+  // Casa Guadalajara reviews (Mexican - 4.3 rating)
+  { id: "r87", restaurantId: "14", username: "MoleMaster", rating: 5, comment: "Mole poblano is incredible! Rich and complex flavors.", date: "2024-01-15" },
+  { id: "r88", restaurantId: "14", username: "FamilyStyleFan", rating: 4, comment: "Warm hospitality and generous portions. Perfect for groups!", date: "2024-01-12" },
+  { id: "r89", restaurantId: "14", username: "CarnitasCarl", rating: 4, comment: "Slow-braised carnitas were tender and flavorful. Great tortillas!", date: "2024-01-09" },
+  { id: "r90", restaurantId: "14", username: "CevicheLover", rating: 4, comment: "Fresh ceviche with perfect citrus balance. Delicious starter!", date: "2024-01-06" },
+  { id: "r91", restaurantId: "14", username: "TresLechesFan", rating: 5, comment: "Tres leches cake was heavenly! So moist and sweet.", date: "2024-01-03" },
+  { id: "r92", restaurantId: "14", username: "TraditionalMexican", rating: 4, comment: "Traditional recipes done well. Feels like home cooking.", date: "2023-12-31" },
+
+  // Dragon Wok reviews (Chinese - 4.4 rating)
+  { id: "r93", restaurantId: "15", username: "AsianCuisine", rating: 4, comment: "Good Chinese food with authentic spices. The kung pao had the right kick!", date: "2024-01-11" },
+  { id: "r94", restaurantId: "15", username: "PekingDuckFan", rating: 5, comment: "Peking duck is a must-order! Crispy skin and tender meat.", date: "2024-01-08" },
+  { id: "r95", restaurantId: "15", username: "SichuanLover", rating: 4, comment: "Love the Sichuan spices. Good heat and numbing sensation.", date: "2024-01-05" },
+  { id: "r96", restaurantId: "15", username: "SpringRollSam", rating: 4, comment: "Fresh spring rolls with great dipping sauce. Solid Chinese food.", date: "2024-01-02" },
+  { id: "r97", restaurantId: "15", username: "MangoDessertFan", rating: 4, comment: "Mango pudding was a nice sweet ending. Light and refreshing.", date: "2023-12-30" },
+  { id: "r98", restaurantId: "15", username: "WokMaster", rating: 5, comment: "Traditional Chinese done right. Both Sichuan and Cantonese are excellent!", date: "2023-12-27" },
+
+  // Golden Dynasty reviews (Chinese - 4.6 rating)
+  { id: "r99", restaurantId: "16", username: "DimSumDiva", rating: 5, comment: "Best dim sum in the city! Fresh and expertly steamed.", date: "2024-01-16" },
+  { id: "r100", restaurantId: "16", username: "CantoneseCuisine", rating: 5, comment: "Authentic Cantonese flavors. Upscale atmosphere and service.", date: "2024-01-13" },
+  { id: "r101", restaurantId: "16", username: "SweetAndSourFan", rating: 4, comment: "Sweet and sour pork was perfectly crispy. Great balance of flavors.", date: "2024-01-10" },
+  { id: "r102", restaurantId: "16", username: "HotAndSourLover", rating: 4, comment: "Hot and sour soup has the perfect tang. Comforting and delicious.", date: "2024-01-07" },
+  { id: "r103", restaurantId: "16", username: "SesameBallBob", rating: 5, comment: "Sesame balls were incredible! Crispy outside, sweet inside.", date: "2024-01-04" },
+  { id: "r104", restaurantId: "16", username: "UpscaleChinese", rating: 4, comment: "Premium Chinese dining experience. Worth the higher prices.", date: "2024-01-01" },
+  { id: "r105", restaurantId: "16", username: "DumplingDan", rating: 5, comment: "Dim sum platter is a must-try. Every dumpling was perfect!", date: "2023-12-29" },
+
+  // Wok Express reviews (Chinese - 3.5 rating - mixed)
+  { id: "r106", restaurantId: "17", username: "QuickBiteQuinn", rating: 4, comment: "Fast and cheap. Good for takeout when you're in a hurry.", date: "2024-01-15" },
+  { id: "r107", restaurantId: "17", username: "GeneralTsosFan", rating: 3, comment: "General Tso's was okay. Nothing special but fills you up.", date: "2024-01-12" },
+  { id: "r108", restaurantId: "17", username: "BudgetEater", rating: 4, comment: "Can't beat the combo meal prices. Good value for money.", date: "2024-01-09" },
+  { id: "r109", restaurantId: "17", username: "FriedRiceFan", rating: 3, comment: "Fried rice was decent. Better Chinese food elsewhere but convenient.", date: "2024-01-06" },
+  { id: "r110", restaurantId: "17", username: "TakeoutTom", rating: 4, comment: "Perfect for quick takeout. Don't expect gourmet but it's reliable.", date: "2024-01-03" },
+  { id: "r111", restaurantId: "17", username: "EggRollEnthusiast", rating: 3, comment: "Egg rolls were a bit greasy. Fast service is the main selling point.", date: "2023-12-31" },
 ];
 
 export const cuisineTypes = ["All", "Italian", "Japanese", "Indian", "French", "Mexican", "Chinese"];
